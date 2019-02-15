@@ -1,0 +1,8 @@
+--- #master playbooks
+- hosts: asa
+  gather_facts: false
+  connection: local
+  roles:
+    - role: asa
+# tags:
+#    - show ver

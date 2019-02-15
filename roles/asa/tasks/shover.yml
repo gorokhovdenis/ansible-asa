@@ -1,0 +1,11 @@
+- name: show version
+  asa_command:
+    provider: "{{ cli }}"
+    commands: show ver
+  register: result
+
+- name: Debug registered var
+  debug: var=result.stdout_lines
+  tags:
+    - sho ver
+

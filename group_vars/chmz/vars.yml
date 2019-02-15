@@ -1,0 +1,5 @@
+---
+cli:
+  host: "{{ inventory_hostname }}"
+  username: prime
+  password: "{{ vault_prime }}"

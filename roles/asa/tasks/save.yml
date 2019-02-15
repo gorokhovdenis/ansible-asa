@@ -1,0 +1,4 @@
+- name: write memory
+  asa_command:
+    provider: "{{ cli }}"
+    commands: write memory

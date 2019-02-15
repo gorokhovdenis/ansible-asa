@@ -1,0 +1,5 @@
+---
+#main tasks file for ANSIBLE-ASA role
+- include_tasks: add_acl.yml
+- include_tasks: save.yml
+#- include_tasks: shover.yml

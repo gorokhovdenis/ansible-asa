@@ -1,0 +1,6 @@
+---
+ifname: inside
+cli:
+  host: "{{ inventory_hostname }}"
+  username: ciscoasa
+  password: "{{ vault_cisco }}"

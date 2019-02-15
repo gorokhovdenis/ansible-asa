@@ -1,0 +1,7 @@
+---
+ifname: inside
+cli:
+  username: "{{ user }}"
+  password: "{{ password }}"
+  authorize: yes
+  auth_pass: "{{ auth_pass }}"
