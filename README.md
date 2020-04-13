@@ -1,4 +1,4 @@
-Automation configuring Cisco ASA devices
+Cisco ASA Configuration Automation
 =========
 
 ```sh role_asa.sh``` for running
