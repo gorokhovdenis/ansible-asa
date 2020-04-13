@@ -55,4 +55,4 @@ BSD
 Author Information
 ------------------
 
-Denis
+Denis Gorokhov
