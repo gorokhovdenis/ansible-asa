@@ -24,7 +24,7 @@ cli:
   auth_pass: "{{ auth_pass }}"
 ```
 
-Example Playbook
+Playbook Example
 ----------------
 
 ```
@@ -46,13 +46,3 @@ Example Playbook
       - access-list {{ ifname }} extended permit ip any object-group SKYPE-4-BUSINESS
     provider: "{{ cli }}"
 ```
-
-License
--------
-
-BSD
-
-Author Information
-------------------
-
-Denis Gorokhov
