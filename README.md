@@ -3,7 +3,7 @@ Cisco ASA Configuration Automation
 
 ```sh role_asa.sh``` for running
 
-**The rules are pasted to ./roles/asa/tasks/add_acl.yml**
+**Rules should be put into ./roles/asa/tasks/add_acl.yml**
 
 Requirements
 ------------
