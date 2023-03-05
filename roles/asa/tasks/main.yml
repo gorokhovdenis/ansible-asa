@@ -1,5 +1,18 @@
 ---
-#main tasks file for ANSIBLE-ASA role
-- include_tasks: add_acl.yml
-- include_tasks: save.yml
-#- include_tasks: shover.yml
+- name: add objects
+  asa_config:
+    lines:
+      "{{ asa_objects }}"
+    parents: ['{{ object_group_name }}']
+    provider: "{{ cli }}"
+
+- name: add ACL
+  asa_config:
+    lines:
+      - access-list {{ ifname }} extended permit ip any object-group SKYPE-4-BUSINESS
+    provider: "{{ cli }}"
+  
+- name: write memory
+  asa_command:
+    provider: "{{ cli }}"
+    commands: write memory
