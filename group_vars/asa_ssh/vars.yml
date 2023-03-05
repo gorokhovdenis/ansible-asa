@@ -4,3 +4,12 @@ cli:
   host: "{{ inventory_hostname }}"
   username: ciscoasa
   password: "{{ vault_cisco }}"
+
+asa_objects:
+  - "description SR-2404845"
+  - "network-object host 195.82.136.8"
+  - "network-object host 195.82.136.10"
+  - "network-object host 195.82.136.11"
+  - "network-object host 195.82.136.12"
+
+object_group_name: "object-group network SKYPE-4-BUSINESS"

@@ -1,7 +1,0 @@
----
-ifname: local
-cli:
-  username: "ciscoasa"
-  password: "{{ password }}"
-  authorize: yes
-  auth_pass: "{{ auth_pass }}"
